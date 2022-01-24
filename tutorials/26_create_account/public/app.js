@@ -1,11 +1,11 @@
 const dsteem = require('dsteem');
 let opts = {};
 //connect to production server
-opts.addressPrefix = 'STM';
+opts.addressPrefix = 'WTH';
 opts.chainId =
-    '0000000000000000000000000000000000000000000000000000000000000000';
+    'd909c4dfab0369c4ae4f4acaf2229cc1e49b3bba0dffb36a37b6174a6f391e2e';
 //connect to server which is connected to the network/production
-const client = new dsteem.Client('https://api.steemit.com');
+const client = new dsteem.Client('https://api.wortheum.news');
 
 // const dsteem = require('dsteem');
 // //define network parameters
@@ -155,7 +155,7 @@ window.submitDisc = async () => {
             'claim_account',
             {
                 creator: creator,
-                fee: '0.000 STEEM',
+                fee: '3.000 WORTH,
                 extensions: [],
             },
         ];
